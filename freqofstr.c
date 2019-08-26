@@ -1,5 +1,3 @@
-//Finding frequency of characters in a string
-#include<stdio.h>
 #include <stdio.h>
 #include <stdlib.h>
 //find frequency of each characters in a string
@@ -29,7 +27,7 @@ int main()
 		{
 			frequency=0;
 			
-				for(j=0;j<count;++j)
+				for(j=i;j<count;++j)
 				{
 					if (x[i]==x[j])
 					{
@@ -39,11 +37,12 @@ int main()
 				}
 				//printf("The frequency for %c is %d\n",x[i],frequency);
 				//storing frequency in array y
-				for(m=0;m<count;++m)
-				{
+				
 					y[m]= frequency;
+					
+					++m;
 					//printf("frequency is %d\n", y[m]);
-				}		
+					
 		}
 		max=y[0];
 
@@ -52,10 +51,19 @@ int main()
 			if(max<y[j])
 			{
 				max=y[j];
-				printf("The character %c occurs %d times\n",x[j],max);
+				printf("character %c occurs the most in string %s, occuring %d times\n",x[j],x,max);
 			}
-			
+			else if(max>y[j])
+			{
+				printf("character %c occurs the most in string %s, occuring %d times\n",x[j],x,max);
+			}
+			else
+			{
+				printf("character %c occurs the most in string %s, occuring %d times\n",x[j],x,max);
+			}
 		}
 		
+	
+	
 	return 0;
 }
