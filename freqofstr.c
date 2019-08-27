@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 //find frequency of each characters in a string
 //for example in aaaabbc; a should have count of 4, 
 //b should have 2 and c should have 1
@@ -53,17 +52,15 @@ int main()
 				max=y[j];
 				printf("character %c occurs the most in string %s, occuring %d times\n",x[j],x,max);
 			}
-			else if(max>y[j])
+			else if(max==y[j])
 			{
 				printf("character %c occurs the most in string %s, occuring %d times\n",x[j],x,max);
-			}
-			else
-			{
-				printf("character %c occurs the most in string %s, occuring %d times\n",x[j],x,max);
-			}
+			}	
+			
 		}
 		
 	
-	
+		
 	return 0;
 }
+
