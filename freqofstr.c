@@ -48,7 +48,7 @@ int main()
 
 		for(j=0;j<count;++j)
 		{
-			if(max<y[j])
+			if(max<y[j] || max==y[j])
 			{
 				max=y[j];
 				
