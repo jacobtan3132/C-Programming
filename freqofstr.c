@@ -43,6 +43,7 @@ int main()
 					//printf("frequency is %d\n", y[m]);
 					
 		}
+
 		max=y[0];
 
 		for(j=0;j<count;++j)
@@ -50,17 +51,14 @@ int main()
 			if(max<y[j])
 			{
 				max=y[j];
-				printf("character %c occurs the most in string %s, occuring %d times\n",x[j],x,max);
-			}
-			else if(max==y[j])
-			{
-				printf("character %c occurs the most in string %s, occuring %d times\n",x[j],x,max);
+				
+				printf("Character %c ",x[j]);	
 			}	
-			
+				
 		}
+		printf("occurs the most in string %s, occuring %d times\n",x,max);
 		
 	
-		
 	return 0;
 }
 
